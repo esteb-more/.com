@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #eee;
+    overflow-x: hidden;
+}
+
+header {
+    background: #111;
+    color: #0ff; /* Neon blue */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 0 10px #0ff;
+    position: relative;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #0ff; /* Neon blue */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f00; /* Neon red */
+    text-shadow: 0 0 20px #f00, 0 0 30px #f00;
+}
+
+.container {
+    padding: 20px;
+}
+
+.main-content {
+    margin: 20px 0;
+}
+
+.neon-text {
+    color: #0f0; /* Neon green */
+    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+}
+
+.neon-text-red {
+    color: #f00; /* Neon red */
+    text-shadow: 0 0 10px #f00, 0 0 20px #f00;
+}
+
+.neon-link {
+    color: #0f0; /* Neon green */
+    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+}
+
+.neon-link-red {
+    color: #f00; /* Neon red */
+    text-shadow: 0 0 10px #f00, 0 0 20px #f00;
+}
+
+.neon-box {
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 10;
+    border: 2px solid #0f0; /* Neon green border */
+    animation: neon-border 1.5s infinite alternate;
+}
+
+/* Animación de borde parpadeante en azul oscuro */
+@keyframes neon-border {
+    0% {
+        border-color: #00f; /* Neon dark blue */
+        box-shadow: 0 0 10px #00f;
+    }
+    50% {
+        border-color: #000; /* No border color */
+        box-shadow: 0 0 5px #000;
+    }
+    100% {
+        border-color: #00f; /* Neon dark blue */
+        box-shadow: 0 0 10px #00f;
+    }
+}
+
+.challenge {
+    border: 2px solid #f00; /* Neon red border */
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.challenge h3 {
+    color: #ff0; /* Neon yellow */
+    text-shadow: 0 0 10px #ff0, 0 0 20px #ff0;
+}
+
+form {
+    background: #222;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #0ff; /* Neon blue shadow */
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #0ff; /* Neon blue */
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 2px solid #0ff; /* Neon blue border */
+    border-radius: 5px;
+    background: #000;
+    color: #0ff; /* Neon blue text */
+    box-shadow: 0 0 5px #0ff;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #0f0; /* Neon green border */
+    box-shadow: 0 0 10px #0f0;
+}
+
+form button {
+    background: #0ff; /* Neon blue */
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 0 10px #0ff;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background: #0f0; /* Neon green */
+    box-shadow: 0 0 20px #0f0;
+    transform: scale(1.1);
+}
+
+form button:active {
+    background: #f00; /* Neon red */
+    box-shadow: 0 0 20px #f00;
+    transform: scale(0.9);
+}
+
+footer {
+    background: #111;
+    color: #0ff; /* Neon blue */
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -5px 10px #0ff;
+    margin-top: 20px;
+}
